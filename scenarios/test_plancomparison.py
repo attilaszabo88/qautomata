@@ -29,3 +29,4 @@ class TestPlanComparisonScenario(Scenario):
         self.driver.find_element(By.ID, "compare-plans").click()
         self.driver.implicitly_wait(15)
         self.logout()
+
