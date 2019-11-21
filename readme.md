@@ -1,6 +1,6 @@
 # Welcome to QAutomata!
 
-This  <test> repository is designed for automated test cases using `selenium`.
+This repository is designed for automated test cases using `selenium`.
 
 
 Setup:
