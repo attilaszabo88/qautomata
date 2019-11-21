@@ -1,4 +1,6 @@
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webelement import WebElement
 
 from scenarios.scenario import Scenario
 
@@ -24,3 +26,7 @@ class TestLoginScenario(Scenario):
         )
 
         self.logout()
+        random_element_logout = self.driver.find_element(
+            By.LINK_TEXT, "Forgot Password?"
+        )
+        self.assertEqual(random_element_logout.text, "Forgot Password?")
