@@ -37,7 +37,7 @@ class Scenario(TestCase):
         self.driver.find_element(By.LINK_TEXT, "Logout").click()
         self.driver.implicitly_wait(15)
 
-    def go_to_patients(self):
+    def go_to_patients_page(self):
         self.driver.find_element(By.LINK_TEXT, 'Patients').click()
         self.driver.implicitly_wait(15)
 

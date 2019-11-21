@@ -12,7 +12,7 @@ class TestPlanComparisonScenario(Scenario):
             user='demo@amplicare.com',
             password='AMPLId3mo',
         )
-        self.go_to_patients()
+        self.go_to_patients_page()
         self.driver.find_elements_by_xpath("//*[contains(@id, 'patient-')]")[2].click()
         self.driver.implicitly_wait(15)
         self.driver.find_element(By.CSS_SELECTOR, '.mainTabs .mainTabs-item:nth-child(3)').click()
